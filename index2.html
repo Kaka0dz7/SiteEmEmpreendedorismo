@@ -87,6 +87,18 @@
     </footer>
 
     <script src="script.js"></script>
+    
+      <a href="#contato" onclick="scrollSuave(event, 'contato')">Ir para Contato</a>
+
+<section id="contato" style="margin-top: 500px;">Seção de Contato</section>
+
+<script>
+  function scrollSuave(event, id) {
+    event.preventDefault();
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+    
 </body>
 
 </html>
